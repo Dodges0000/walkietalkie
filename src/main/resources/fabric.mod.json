@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "walkietalkie",
+  "version": "${version}",
+  "name": "Walkie Talkie",
+  "description": "Рации с поддержкой Simple Voice Chat",
+ "authors": ["Dodges0000"],
+"license": "MIT",
+ "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.walkietalkie.WalkieTalkieMod"],
+    "client": ["com.example.walkietalkie.client.WalkieTalkieClient"],
+    "voicechat": ["com.example.walkietalkie.voice.RadioVoicechatPlugin"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "voicechat": "*"
+  }
+}
